@@ -56,8 +56,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
    ```bash
    git clone https://github.com/pnnbao97/VieNeu-TTS.git
    cd VieNeu-TTS
-   python3 -m venv venv
-   source venv/bin/activate
+  << python3 -m venv venv
+   source venv/bin/activate >>
    ```
 
 2. **Install Dependencies:**
