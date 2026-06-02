@@ -56,6 +56,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
    ```bash
    git clone https://github.com/pnnbao97/VieNeu-TTS.git
    cd VieNeu-TTS
+   python3 -m venv venv
+   source venv/bin/activate
    ```
 
 2. **Install Dependencies:**
@@ -68,6 +70,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
      > 💡 *Note: Requires a CUDA-compatible NVIDIA GPU (CUDA version >= 12.8) or Apple Silicon MPS. [NVIDIA Toolkit](https://developer.nvidia.com/cuda-downloads) is required for maximum speed. Enables the full **VieNeu-TTS-v2** backbone for maximum audio quality and high-fidelity voice cloning.*
 
      ```bash
+     pip install torch==2.5.1+cu121 torchaudio==2.5.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
      uv sync --group gpu
      ```
 
